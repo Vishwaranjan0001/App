@@ -1,0 +1,7 @@
+/App/frontend/node_modules/
+/App/backend/node_modules/
+App/frontend/dist/
+App/backend/uploads/
+.DS_Store
+npm-debug.log
+.env

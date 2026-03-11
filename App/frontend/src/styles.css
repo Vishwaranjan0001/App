@@ -1,0 +1,41 @@
+:root{
+  --color-primary:#2d7a3e;
+  --color-secondary:#f59e0b;
+}
+body{font-family:system-ui,Segoe UI,Arial; margin:0; background:#f7faf9}
+.app-nav{display:flex; gap:12px; padding:12px 20px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+.app-nav a{color:var(--color-primary); text-decoration:none}
+.container{max-width:980px; margin:20px auto; padding:16px}
+.hero{background:linear-gradient(135deg,#2d7a3e,#235f31); color:#fff; padding:60px 40px; border-radius:12px; text-align:center; min-height:350px; display:flex; flex-direction:column; justify-content:center; align-items:center}
+.module-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px}
+.module-card{background:#fff; padding:16px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+.module-icon{font-size:28px}
+.auth-card{max-width:420px; margin:40px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06)}
+.role-toggle{display:flex; gap:8px; margin-bottom:12px}
+.role-toggle button{flex:1; padding:8px 10px; border-radius:8px; border:1px solid #ddd; background:#fff}
+.role-toggle .active{background:var(--color-primary); color:#fff; border-color:var(--color-primary)}
+label{display:block; margin-top:8px; font-weight:600}
+input{width:100%; padding:10px; margin-top:6px; border:1px solid #e6e6e6; border-radius:8px}
+.btn{display:inline-block; margin-top:12px; padding:10px 14px; background:var(--color-primary); color:#fff; border-radius:8px; border:none}
+.btn-primary{background:var(--color-primary); color:#fff}
+.btn-secondary{background:var(--color-secondary); color:#fff}
+.btn-outline{background:transparent; border:2px solid rgba(255,255,255,0.6); color:#fff}
+
+/* styled select used for Role selection */
+.role-select{
+  width:100%;
+  padding:10px 12px;
+  margin-top:6px;
+  border:1px solid #e6e6e6;
+  border-radius:8px;
+  background:#fff;
+  cursor:pointer;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background-image: linear-gradient(45deg, transparent 50%, #555 50%), linear-gradient(135deg, #555 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 13px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+.role-select:focus{outline:2px solid rgba(45,122,62,0.15); box-shadow:0 0 0 3px rgba(45,122,62,0.06)}
